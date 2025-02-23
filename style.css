@@ -1,0 +1,143 @@
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid black;
+  width: 400px;
+  height: 600px;
+  border-radius: 4px;
+  background-color: #265594;
+}
+
+.display {
+  border: 1px solid gray;
+  padding: 4px 8px;
+  margin-top: 40px;
+  margin-left: 12px;
+  margin-right: 12px;
+
+  font-family: "Press Start 2P", serif;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+  color: #040603;
+  text-align: right;
+  vertical-align: middle;
+  background-color: #c6c6c6;
+  border: 4px solid #040603;
+  border-radius: 4px;
+  outline: 1px solid #040603;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 16px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.brand {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  padding-top: 4px;
+}
+
+.model {
+  color: white;
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.solar {
+  display: flex;
+
+  margin-left: 12px;
+}
+
+.solar > div {
+  border: 1px solid black;
+  background: #19231f;
+
+  width: 50px;
+  height: 50px;
+}
+
+.button-container {
+  display: flex;
+  flex: 1;
+  gap: 50px;
+
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.left-buttons {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.left-buttons div,
+.operators div {
+  padding-top: 2px;
+  padding-left: 4px;
+  width: 70px;
+
+  font-size: 20px;
+  border-radius: 4px;
+}
+
+.operators {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.operators div {
+  flex: 1;
+}
+
+.operators div:last-child {
+  flex: 2.3;
+}
+
+.button {
+  display: flex;
+}
+
+.white {
+  color: #265594;
+  font-weight: 600;
+  background-color: #e8e9ed;
+}
+
+.red {
+  color: #fbe9f0;
+  font-weight: 600;
+  background-color: #d9323e;
+}
