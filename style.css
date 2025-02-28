@@ -102,8 +102,8 @@
   gap: 12px;
 }
 
-.left-buttons div,
-.operators div {
+.left-buttons button,
+.operators button {
   padding-top: 2px;
   padding-left: 4px;
   width: 70px;
@@ -118,11 +118,11 @@
   gap: 12px;
 }
 
-.operators div {
+.operators button {
   flex: 1;
 }
 
-.operators div:last-child {
+.operators button:last-child {
   flex: 2.3;
 }
 
@@ -140,4 +140,9 @@
   color: #fbe9f0;
   font-weight: 600;
   background-color: #d9323e;
+}
+
+.dot:disabled {
+  font-size: 90;
+  background-color: gray;
 }
